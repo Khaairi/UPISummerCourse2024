@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Generation Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Waste Generation Data Visualization</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Group 19 UPI Summer Course 2024</h2>
+            <table cellpadding="10">
+                <thead>
+                    <tr>
+                        <td>No</td>
+                        <td style="padding-left: 20px;">Name</td>
+                        <td style="padding-left: 20px;">University</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td style="padding-left: 20px;">Raden Fadhil Anugerah Ardiwilaga</td>
+                        <td style="padding-left: 20px;">Universitas Pendidikan Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="padding-left: 20px;">Talitha Fayarina Adhigunawan</td>
+                        <td style="padding-left: 20px;">Universitas Pendidikan Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td style="padding-left: 20px;">Imelda Pangaribuan</td>
+                        <td style="padding-left: 20px;">Universiti Malaysia Terengganu</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td style="padding-left: 20px;">Muhammad Yusuf Bahtiar</td>
+                        <td style="padding-left: 20px;">Universitas Pendidikan Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td style="padding-left: 20px;">Mochamad Khaairi</td>
+                        <td style="padding-left: 20px;">Universitas Pendidikan Indonesia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Total Annual Amount of Waste in Each Province from Year to Year</h2>
+            <img src="{{ url_for('static', filename='annual_waste_trend.png') }}" alt="Annual Waste Trend">
+        </section>
+        <section>
+            <h2>Categorization of Average Annual Waste Generation in Each Province for All Years</h2>
+            <img src="{{ url_for('static', filename='average_annual_waste_category.png') }}"
+                alt="Average Annual Waste Category">
+        </section>
+        <section>
+            <h2>Analysis Results</h2>
+            <div class="results">
+                <h3>1. Total Annual Waste Generation in Each Province Each Year</h3>
+                <img src="{{ url_for('static', filename='total_annual_waste.png') }}" alt="Total Annual Waste">
+                <h3>2. Average Total Annual Waste Generation in Each Province for All Years</h3>
+                <img src="{{ url_for('static', filename='average_annual_waste.png') }}" alt="Average Annual Waste">
+                <h3>3. Province with Most Annual Waste Generation Each Year</h3>
+                <img src="{{ url_for('static', filename='most_annual_waste.png') }}" alt="Most Annual Waste">
+                <h3>4. Province with Least Annual Waste Generation Each Year</h3>
+                <img src="{{ url_for('static', filename='least_annual_waste.png') }}" alt="Least Annual Waste">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Waste Management Data</p>
+    </footer>
+</body>
+
+</html>
